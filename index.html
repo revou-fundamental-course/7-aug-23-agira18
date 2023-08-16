@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Matematik</title>
+    
+</head>
+<body>
+    <header><h1>Kalkulator Luas dan Keliling Segitiga</h1>
+        <p>Hai sobat selamat datang di Katik</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+ <main>
+<div>
+    <div id="luassegitiga" class="judul"> <h2>Luas Segitiga</h2></div>
+    <div class="container">
+            <div class="gambar">
+                <img src="assets/Rumus-Segitiga-Sama-Kaki.png" alt="segi tiga" width="400">
+            </div>
+            <div class="keterangan">
+                <p>Rumus menentukan Luas Yaitu:</p>
+                <p align="center">L=1/2 x A x T</p>
+                <p>Dimana:</p>
+                <p>L = Luas</p>
+                <p>A = Alas</p>
+                <p>T = Tinggi</p>
+                <hr>
+                <h2 align="center">Hitung Luas Segitiga</h2>
+            </div>  
+
+        <form action="">        
+            <section class="input_section">
+                <label for="alas_input">Alas Segitiga</label>
+                <input type="number" id="alas_input"placeholder="0" required> 
+                <label for="tinggi_input">Tinggi Segitiga</label>
+                <input type="number" id="tinggi_input" placeholder="0" required> 
+                <div>
+                    <input type="button" value="Hitung" class="button" onclick="luas()">
+                    <input type="reset" value="Reset" class="button">
+                    <input type="button" value="Go to Keliling" class="button" onclick="window.location.href='#kelilingsegitiga'">
+                </div>   
+            </section>
+           
+    </form> 
+        <div class="keterangan">
+            <p id="keterangan_output"></p>
+            <p id="proses_output"></p>
+            <p id="hasil_output"></p>
+          </div>
+
+    </div>
+</div>
+<br>
+<div>
+    <div id="kelilingsegitiga" class="judul"> <h2>Keliling Segitiga</h2></div>
+    <div class="container">
+            <div class="gambar">
+                <img src="assets/Rumus-Segitiga-Sama-Kaki.png" alt="segi tiga" width="400">
+            </div>
+            <div class="keterangan">
+                <p>Rumus menentukan Keliling Yaitu:</p>
+                <p align="center">K=S1 + S2 + S3</p>
+                <p>Dimana:</p>
+                <p>K = Keliling</p>
+                <p>S1 = Sisi A</p>
+                <p>S2 = Sisi B</p>
+                <p>S3 = Sisi C</p>
+                <hr>
+                <h2 align="center">Hitung Keliling Segitiga</h2>
+            </div>
+    <form action=""> 
+        <section class="input_section">
+            <label for="sisiA_input">Sisi A</label>
+            <input type="number" id="sisiA_input" value="" placeholder="0"> 
+            <label for="sisiB_input">Sisi B</label>
+            <input type="number" id="sisiB_input" value="" placeholder="0">
+            <label for="sisiC_input">Sisi C</label>
+            <input type="number" id="sisiC_input" value="" placeholder="0"> 
+        </section>
+        <div>
+            <input type="button" value="Hitung" class="button" onclick="keliling()">
+            <input type="reset" value="Reset" class="button">
+            <input type="button" value="Go to Luas" class="button" onclick="window.location.href='#luassegitiga'">
+        </div>   
+    </form>
+    <div class="keterangan">
+        <p id="keterangan_output_K"></p>
+        <p id="proses_output_K"></p>
+        <p id="hasil_output_K"></p>
+      </div>
+
+</div>
+    </div>
+</div>
+</main>
+<script src="js/script.js"></script>
+
+<footer><h3>mini course RevoU</h3>
+    <h3>@ created by gilang</h3></footer>
+</body>
+
+</html>

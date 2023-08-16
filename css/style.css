@@ -1,0 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient( to right, #0C7B93 , #00A8CC , #27496D);
+}
+header{
+    color:white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 10px;
+    
+}
+
+.input_section{
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+.judul{
+    background-color: #27496D;
+    margin: 0 auto;
+    width: 800px;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: solid #27496D;
+    
+}
+.gambar{
+    width: 400px;
+    margin:0 auto;
+    display: block;
+}
+.container{
+    width: 800px;
+     margin: 0 auto;
+     background-color: white;
+     padding: 20px;
+     height: 1000px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     border: solid #27496D;
+
+}
+.keterangan{
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    color: #27496D;
+    
+}
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #146C94;
+    font-family: monospace;
+    margin-top: 10px;
+}
+.input_section{
+    margin: 0 auto;
+}
+input{
+    padding: 8px;
+    border: 3px solid #00A8CC;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none; 
+}
+
+input:focus{
+    border-color:#146C94;
+}
+.button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    background-color: #00A8CC;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #146C94;
+}
+
+.button:active{
+    transform: translateY(10px);
+}
+footer{
+    color:white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 10px;
+    padding: 10px;
+}
